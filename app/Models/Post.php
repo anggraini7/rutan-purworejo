@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Post extends Model
+{
+    use HasFactory;
+
+    protected $table = 'posts';
+
+    // Pastikan semua kolom ini tertulis lengkap di dalam array fillable
+    protected $fillable = [
+        'title',
+        'slug',
+        'content',
+        'image',
+        'user_id'
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
