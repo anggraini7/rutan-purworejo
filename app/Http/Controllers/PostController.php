@@ -62,9 +62,13 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+   public function show($id)
     {
-        //
+    // Mengambil satu berita berdasarkan ID, jika tidak ketemu akan memunculkan error 404
+    $post = Post::findOrFail($id); 
+
+    // Mengirim data berita ke file template detail_berita.blade.php
+    return view('detail_berita', compact('post'));
     }
 
     /**
