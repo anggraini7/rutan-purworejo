@@ -30,13 +30,16 @@
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ $post->title }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $post->created_at->format('d M Y') }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                        <a href="#" class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</a>
-                                        <form action="#" method="POST" class="inline-block">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="text-red-600 hover:text-red-900" onclick="return confirm('Yakin ingin menghapus berita ini?')">Hapus</button>
-                                        </form>
-                                    </td>
+    <!-- Tombol Edit dihubungkan dengan ID Postingan -->
+    <a href="{{ route('posts.edit', $post->id) }}" class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</a>
+    
+    <!-- Form Hapus dihubungkan dengan Route Destroy dan ID Postingan -->
+    <form action="{{ route('posts.destroy', $post->id) }}" method="POST" class="inline-block">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="text-red-600 hover:text-red-900" onclick="return confirm('Yakin ingin menghapus berita ini?')">Hapus</button>
+    </form>
+</td>
                                 </tr>
                             @empty
                                 <tr>
