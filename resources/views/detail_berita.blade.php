@@ -10,28 +10,8 @@
 <body class="bg-[#0a1d37] text-gray-100 font-sans min-h-screen flex flex-col">
 
     <!-- NAVBAR INSTANSI -->
-    <nav class="bg-[#0f294a] shadow-md border-b border-blue-900/50 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    <img src="{{ asset('img/logo.png') }}" alt="Logo" class="w-10 h-10 object-contain">
-                    <span class="font-bold text-white text-sm sm:text-base">RUTAN PURWOREJO</span>
-                </div>
-                
-                <!-- Menu Navigasi -->
-                <div class="flex items-center gap-5">
-                    <a href="{{ url('/') }}" class="text-xs sm:text-sm font-medium text-gray-300 hover:text-amber-400 transition">Beranda</a>
-                    <a href="{{ url('/profil') }}" class="text-xs sm:text-sm font-medium text-gray-300 hover:text-amber-400 transition">Profil</a>
-                    <a href="{{ url('/kunjungan') }}" class="text-xs sm:text-sm font-medium text-gray-300 hover:text-amber-400 transition">Layanan Kunjungan</a>
-                    <a href="{{ url('/standar-pelayanan') }}" class="text-xs sm:text-sm font-medium text-gray-300 hover:text-amber-400 transition">Standar Pelayanan</a>
-                    <a href="{{ url('/informasi-wbp') }}" class="text-xs sm:text-sm font-medium text-gray-300 hover:text-amber-400 transition">Informasi WBP</a>
-                    <a href="{{ url('/layanan-pengaduan') }}" class="text-xs sm:text-sm font-medium text-gray-300 hover:text-amber-400 transition">Layanan Pengaduan</a>
-                    <a href="{{ url('/berita') }}" class="text-xs sm:text-sm font-semibold text-amber-400 border-b-2 border-amber-400 pb-1">Berita</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+        @include('partials.navbar')
+
 
     <!-- AREA DETAIL BERITA (TEMPLATE DINAMIS) -->
     <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1 w-full">

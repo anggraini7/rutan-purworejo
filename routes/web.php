@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 // Beranda (Mengambil data berita untuk ditampilkan di landing page jika perlu)
 Route::get('/', function () {
     $posts = \App\Models\Post::latest()->get();
-    return view('welcome', compact('posts'));
+    return view('beranda', compact('posts'));
 });
 
 // Halaman Profil

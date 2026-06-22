@@ -8,4 +8,12 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    // --- TAMBAHKAN BLOK SERVER INI ---
+    server: {
+        host: '0.0.0.0',
+        hmr: {
+            host: '192.168.1.19' // Masukkan IP laptop temanmu di sini
+        },
+    },
+    // ---------------------------------
 });
