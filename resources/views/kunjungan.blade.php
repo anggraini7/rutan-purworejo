@@ -7,7 +7,7 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#0a1d37] text-gray-100 font-sans min-h-screen flex flex-col">
+<body class="bg-bg text-gray-100 font-sans min-h-screen flex flex-col">
 
     <!-- NAVBAR INSTANSI -->
         @include('partials.navbar')
@@ -16,8 +16,8 @@
     <!-- KONTEN -->
     <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full space-y-12">
         <div>
-            <h1 class="text-3xl font-bold text-white">Layanan Kunjungan</h1>
-            <p class="text-sm text-gray-400 mt-1">Informasi tata cara, berkas wajib, serta jadwal kunjungan keluarga tatap muka.</p>
+            <h1 class="text-3xl font-bold text-font-biru">Layanan Kunjungan</h1>
+            <p class="text-sm text-font-abu mt-1">Informasi tata cara, berkas wajib, serta jadwal kunjungan keluarga tatap muka.</p>
             <div class="w-12 h-1 bg-amber-500 mt-3 rounded"></div>
         </div>
 

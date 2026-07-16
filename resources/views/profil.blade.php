@@ -7,15 +7,15 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#0a1d37] text-gray-100 font-sans min-h-screen flex flex-col">
+<body class="bg-bg text-gray-100 font-sans min-h-screen flex flex-col">
 
         @include('partials.navbar')
 
 
     <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full space-y-12">
         <div>
-            <h1 class="text-3xl font-bold text-white">Profil Instansi</h1>
-            <p class="text-sm text-gray-400 mt-1">Sejarah, visi, misi, dan struktur organisasi Rutan Kelas IIB Purworejo.</p>
+            <h1 class="text-3xl font-bold text-font-biru">Profil Instansi</h1>
+            <p class="text-sm text-font-abu mt-1">Sejarah, visi, misi, dan struktur organisasi Rutan Kelas IIB Purworejo.</p>
             <div class="w-12 h-1 bg-amber-500 mt-3 rounded"></div>
         </div>
 
@@ -47,8 +47,8 @@
 
         <section class="space-y-8 pt-4">
             <div class="text-center">
-                <h2 class="text-2xl font-bold text-white">Struktur Organisasi</h2>
-                <p class="text-xs text-gray-400 mt-1">Susunan pejabat struktural di lingkungan Rutan Kelas IIB Purworejo</p>
+                <h2 class="text-2xl font-bold text-font-biru">Struktur Organisasi</h2>
+                <p class="text-xs text-font-abu mt-1">Susunan pejabat struktural di lingkungan Rutan Kelas IIB Purworejo</p>
                 <div class="w-10 h-0.5 bg-amber-500 mx-auto mt-2 rounded"></div>
             </div>
 
@@ -107,6 +107,6 @@
         </section>
     </main>
 
-    <footer class="bg-[#08172c] text-gray-500 text-xs py-6 text-center border-t border-blue-900/40">&copy; {{ date('Y') }} Rutan Kelas IIB Purworejo.</footer>
+    <footer class="bg-footer text-gray-500 text-xs py-6 text-center border-t border-blue-900/40">&copy; {{ date('Y') }} Rutan Kelas IIB Purworejo.</footer>
 </body>
 </html>

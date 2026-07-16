@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Warna untuk area Navigasi & Footer (Tetap Biru Gelap Asli) */
+    --color-instansi-dark: #0a1d37;  
+    --color-instansi-footer: #08172c;
+    --color-text-nav: #f3f4f6;
+
+  /* Warna Baru untuk Hero Section / Area Tengah (Menjadi Putih & Teks Biru) */
+    --color-hero-bg: #ffffff;        
+    --color-hero-text: #0f294a;      
+    --color-hero-muted: #4b5563;     
+    --color-font-putih: #ffffff;  
+  /* Warna Aksen Pendukung (Tombol & Badge) */
+    --color-aksen-yellow: #f59e0b; 
+       
+  /* warna tambahan*/
+    --color-card:#fffef7;
+    --color-card-biru:#0f294a;
+
+}

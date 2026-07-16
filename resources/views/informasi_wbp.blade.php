@@ -7,7 +7,7 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#0a1d37] text-gray-100 font-sans min-h-screen flex flex-col">
+<body class="bg-bg text-gray-100 font-sans min-h-screen flex flex-col">
 
     <!-- NAVBAR INSTANSI -->
         @include('partials.navbar')
@@ -16,8 +16,8 @@
     <!-- KONTEN -->
     <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full space-y-12">
         <div>
-            <h1 class="text-3xl font-bold text-white">Informasi Warga Binaan Pemasyarakatan</h1>
-            <p class="text-sm text-gray-400 mt-1">Aspek pembinaan, hak integrasi, serta transparansi tata tertib warga binaan.</p>
+            <h1 class="text-3xl font-bold text-font-biru">Informasi Warga Binaan Pemasyarakatan</h1>
+            <p class="text-sm text-font-abu mt-1">Aspek pembinaan, hak integrasi, serta transparansi tata tertib warga binaan.</p>
             <div class="w-12 h-1 bg-amber-500 mt-3 rounded"></div>
         </div>
 
@@ -45,7 +45,7 @@
         </div>
 
         <!-- Call Center WhatsApp -->
-        <div class="bg-[#113a2a] border border-emerald-900/60 rounded-xl p-6 text-center max-w-xl mx-auto shadow-sm">
+        <div class="bg-card-biru border border-emerald-900/60 rounded-xl p-6 text-center max-w-xl mx-auto shadow-sm">
             <h4 class="font-bold text-emerald-300 mb-1">Pusat Informasi Kendala & Layanan WBP</h4>
             <p class="text-xs text-gray-300 mb-4">Butuh informasi status masa tahanan keluarga? Hubungi WhatsApp resmi Pusat Informasi Rutan:</p>
             <a href="https://wa.me/6281234567890" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm py-2.5 px-6 rounded-lg transition inline-flex items-center gap-2">

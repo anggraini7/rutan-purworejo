@@ -7,7 +7,7 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#0a1d37] text-gray-100 font-sans min-h-screen flex flex-col">
+<body class="bg-bg text-gray-100 font-sans min-h-screen flex flex-col">
 
     <!-- NAVBAR INSTANSI -->
         @include('partials.navbar')
@@ -17,14 +17,14 @@
     <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1 w-full">
         
         <!-- Tombol Kembali -->
-        <a href="{{ url('/berita') }}" class="text-xs text-amber-400 hover:text-amber-500 font-semibold inline-flex items-center gap-1 mb-6 transition">
+        <a href="{{ url('/berita') }}" class="text-xs text-font-abu hover:text-font-biru font-semibold inline-flex items-center gap-1 mb-6 transition">
             &larr; Kembali ke Daftar Berita
         </a>
 
         <article class="space-y-6">
             <!-- Header Berita -->
             <header class="space-y-3">
-                <span class="text-xs sm:text-sm text-amber-400 font-medium block">
+                <span class="text-xs sm:text-sm text-font-biru font-medium block">
                     Diterbitkan pada: {{ $post->created_at->format('d M Y') }}
                 </span>
                 <h1 class="text-2xl sm:text-4xl font-bold text-white leading-tight">
@@ -45,7 +45,7 @@
             </div>
 
             <!-- Isi Konten Berita -->
-            <div class="bg-[#0f294a] rounded-xl p-6 sm:p-8 border border-blue-900/40 shadow-md text-gray-200 text-sm sm:text-base leading-relaxed space-y-4">
+            <div class="bg-footer rounded-xl p-6 sm:p-8 border border-black-900/40 shadow-md text-font-putih text-sm sm:text-base leading-relaxed space-y-4">
                 {{-- Menggunakan {!! !!} jika konten berita disimpan dalam bentuk HTML editor / rich text --}}
                 {!! nl2br(e($post->content)) !!}
             </div>

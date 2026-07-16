@@ -1,5 +1,6 @@
-<nav class="bg-[#08172c] text-white border-b border-blue-900/40 relative z-50">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+<nav class="bg-instansi-dark text-white border-b border-blue-900/40 relative z-50">
+    <!-- DIUBAH: Menggunakan 'w-full' menggantikan 'max-w-7xl' dan menaikkan padding pinggirnya -->
+    <div class="w-full px-6 sm:px-12 py-3 flex items-center justify-between">
         
         <!-- LOGO & TEKS (Kiri) -->
         <div class="flex items-center space-x-3">
@@ -56,7 +57,6 @@
         <a href="{{ url('/standar-pelayanan') }}"class="{{ request()->is('standar-pelayanan*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Standar Pelayanan</a>
         <a href="{{ url('/kunjungan') }}"class="{{ request()->is('kunjungan*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Layanan Kunjungan</a>
         <a href="{{ url('/layanan-pengaduan') }}"class="{{ request()->is('layanan-pengaduan*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Layanan Pengaduan</a>
-        
     </div>
 </div>
 
