@@ -31,13 +31,70 @@
                     </h3>
                     <div class="space-y-2">
                         <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
-                            <span class="text-xs text-gray-300">SOP Layanan Kunjungan Tatap Muka.pdf</span>
-                            <a href="{{ asset('pdf/sop-kunjungan.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                            <span class="text-xs text-gray-300">SOP LAYANAN INFORMASI MEDIA SOSIAL.pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP LAYANAN INFORMASI MEDIA SOSIAL.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
                         </div>
+
                         <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
-                            <span class="text-xs text-gray-300">SOP Pengaduan Masyarakat.pdf</span>
-                            <a href="{{ asset('pdf/sop-pengaduan.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                            <span class="text-xs text-gray-300">SOP LAYANAN KUNJUNGAN.pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP LAYANAN KUNJUNGAN.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
                         </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP LAYANAN PENITIPAN BARANG.pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP LAYANAN PENITIPAN BARANG.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP LAYANAN PENGADUAN ONLINE.pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP LAYANAN PENGADUAN ONLINE.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP PENGGELEDAHAN BADAN.pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP PENGGELEDAHAN BADAN.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP INTEGRASI.pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP INTEGRASI.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP NASI LAUK TRASI (INOVASI WBBM).pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP NASI LAUK TRASI (INOVASI WBBM).pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP GADIS JELITAS (INOVASI WBBM).pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP GADIS JELITAS (INOVASI WBBM).pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP LAUK KETAN (INOVASI WBBM).pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP LAUK KETAN (INOVASI WBBM).pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP TAKON ROSI (INOVASI WBBM ).pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP TAKON ROSI (INOVASI WBBM ).pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP E-TROLINGKAMP.pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP E-TROLINGKAMP.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP SIPASRATIH.pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP SIPASRATIH.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
+                            <span class="text-xs text-gray-300">SOP RUNOS 9ALARM ANTAR INSTANSI.pdf</span>
+                            <a href="{{ asset('pdf/pub/SOP RUNOS 9ALARM ANTAR INSTANSI).pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                        </div>
+
                     </div>
                 </div>
 
@@ -50,8 +107,8 @@
                     </h3>
                     <div class="space-y-2">
                         <div class="flex items-center justify-between p-2.5 bg-blue-950/40 border border-blue-900/20 rounded-lg">
-                            <span class="text-xs text-gray-300">Permenkumham No. 7 Tahun 2022 (Syarat Pemberian CB/PB).pdf</span>
-                            <a href="{{ asset('pdf/permen-no-7-2022.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
+                            <span class="text-xs text-gray-300">Undang-Undang Nomor 22 Tahun 2022 Tentang Pemasyarakatan.pdf</span>
+                            <a href="{{ asset('pdf/pub/Salinan UU No 22 Tahun 2022.pdf') }}" download class="text-[11px] font-bold text-amber-400 hover:underline shrink-0">Download</a>
                         </div>
                     </div>
                 </div>
@@ -71,9 +128,11 @@
                 <!-- Box Barcode Placeholder -->
                 <div class="bg-white p-4 rounded-lg inline-block shadow-md mb-2">
                     <!-- Kamu tinggal ganti src gambar barcode aslimu di sini nanti -->
-                    <img src="{{ asset('images/barcode-survey.png') }}" alt="Barcode Survey IKM IPK" class="w-40 h-40 object-contain mx-auto">
+                    <img src="{{ asset('img/qr.jpeg') }}" alt="Barcode Survey IKM IPK" class="w-40 h-40 object-contain mx-auto">
                 </div>
-                
+                <a href="https://star-survei3a.kemenimipas.go.id/ly/gqKZro8I" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 px-4 rounded-lg text-center transition tracking-wide shadow-md shadow-emerald-900/20">
+                    klik di sini
+                </a>
                 <span class="text-[11px] text-gray-400 italic">Atau klik tautan langsung untuk mengisi survey.</span>
             </div>
         </div>

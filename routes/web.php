@@ -26,6 +26,11 @@ Route::get('/publikasi', function () {
     return view('publikasi');
 });
 
+// halaman inovasi
+Route::get('/inovasi', function () {
+    return view('inovasi');
+});
+
 // Halaman Profil
 Route::get('/profil', function () {
     return view('profil');

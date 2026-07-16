@@ -21,7 +21,7 @@
             <a href="{{ url('/standar-pelayanan') }}"class="{{ request()->is('standar-pelayanan*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">layanan</a>
             <a href="{{ url('/publikasi') }}"class="{{ request()->is('publikasi*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Publikasi</a>
             <a href="{{ url('/') }}"class="{{ request()->is('*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Produk Karya WBP</a>
-            <a href="{{ url('/') }}"class="{{ request()->is('*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Inovasi</a>
+            <a href="{{ url('/inovasi') }}"class="{{ request()->is('inovasi*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Inovasi</a>
 
             <!-- DROPDOWN LAYANAN UNTUK LAPTOP -->
             <div class="relative">
@@ -85,6 +85,7 @@
             <div id="mobile-dropdown-menu" class="mt-2 pl-4 flex flex-col space-y-3 border-l border-gray-700 hidden">
                 <a href="{{ url('/kunjungan') }}" class="text-sm text-gray-400 hover:text-amber-400 transition {{ request()->is('kunjungan*') ? 'text-amber-400 font-bold' : '' }}">Layanan Kunjungan</a>
                 <a href="{{ url('/layanan-pengaduan') }}" class="text-sm text-gray-400 hover:text-amber-400 transition {{ request()->is('layanan-pengaduan*') ? 'text-amber-400 font-bold' : '' }}">Layanan Pengaduan</a>
+                <a href="{{ url('/layanan-Integrasi') }}" class="text-sm text-gray-400 hover:text-amber-400 transition {{ request()->is('layanan-Integrasi*') ? 'text-amber-400 font-bold' : '' }}">Layanan Integrasi</a>
             </div>
         </div>
     </div>
