@@ -16,6 +16,16 @@ Route::get('/', function () {
     return view('beranda', compact('posts'));
 });
 
+// halaman integrasi
+Route::get('/layanan-integrasi', function () {
+    return view('layanan_integrasi');
+});
+
+// halaman publikasi
+Route::get('/publikasi', function () {
+    return view('publikasi');
+});
+
 // Halaman Profil
 Route::get('/profil', function () {
     return view('profil');
@@ -49,6 +59,7 @@ Route::get('/berita', function () {
 
 // Halaman Detail Berita (Template Dinamis berdasarkan ID)
 Route::get('/berita/{id}', [PostController::class, 'show'])->name('berita.show');
+
 
 
 /*

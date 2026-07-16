@@ -10,44 +10,40 @@
 <body class="bg-bg text-gray-100 font-sans min-h-screen flex flex-col">
 
     <!-- NAVBAR INSTANSI -->
-        @include('partials.navbar')
-
+    @include('partials.navbar')
 
     <!-- KONTEN -->
     <main class="max-w-4xl mx-auto px-4 py-12 flex-1 w-full space-y-12">
         <div class="text-center">
             <h1 class="text-3xl font-bold text-font-biru">Layanan Pengaduan & Survey</h1>
-            <p class="text-sm text-font-abu mt-1">Mendukung komitmen Wilayah Birokrasi Bersih dan Melayani (WBBM) bebas pungli.</p>
+            <p class="text-sm text-font-abu mt-1">Rutan Purworejo menyediakan layanan pengaduan bagi masyarakat, pengunjung, maupun keluarga Warga Binaan yang ingin menyampaikan keluhan, masukan, atau laporan terkait pelayanan di Rutan Purworejo.</p>
             <div class="w-12 h-1 bg-amber-500 mx-auto mt-3 rounded"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
-            <!-- Box Whistleblowing System -->
-            <div class="bg-[#0f294a] rounded-xl p-6 border border-red-900/30 shadow-md flex flex-col justify-between">
+        <!-- MEMBUAT CARD DI TENGAH DAN AGAK LEBAR -->
+        <div class="flex justify-center pt-4">
+            <!-- Menggunakan max-w-3xl agar lebih lebar, dan border blue-900/40 untuk mengganti warna merah -->
+            <div class="bg-[#0f294a] rounded-xl p-6 border border-blue-900/40 shadow-md flex flex-col justify-between w-full max-w-3xl">
                 <div>
-                    <span class="bg-red-950 text-red-400 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded inline-block mb-3 border border-red-800/30">Anti-Korupsi</span>
-                    <h3 class="text-lg font-bold text-white mb-2">Hotline Pengaduan Pelanggaran</h3>
-                    <p class="text-xs text-gray-300 leading-relaxed mb-4">
-                        Menemukan indikasi pungli, pemerasan, gratifikasi, atau pelanggaran disiplin kode etik petugas rutan? Laporkan melalui kanal pengaduan rahasia (Whistleblowing System) internal kami.
+                    <!-- Badge warna diganti dari merah ke amber/emas agar lebih serasi dengan tema web -->
+                    <span class="bg-amber-500/10 text-amber-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded inline-block mb-3 border border-amber-500/20">Anti-Korupsi</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Hotline Pengaduan </h3>
+                    <p class="text-xs text-gray-300 leading-relaxed mb-6">
+                        Setiap pengaduan akan ditindaklanjuti sesuai dengan ketentuan yang berlaku. Mohon menyampaikan pengaduan dengan data yang jelas dan bertanggung jawab.
                     </p>
                 </div>
-                <a href="https://wa.me/628999888777" target="_blank" class="bg-red-700 hover:bg-red-800 text-white font-bold text-xs py-2.5 px-4 rounded-lg text-center transition tracking-wide shadow-md shadow-red-900/20">
-                    Laporkan Lewat WhatsApp
-                </a>
-            </div>
 
-            <!-- Box Survey IKM / IPK -->
-            <div class="bg-[#0f294a] rounded-xl p-6 border border-blue-900/40 shadow-md flex flex-col justify-between">
-                <div>
-                    <span class="bg-blue-950 text-amber-400 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded inline-block mb-3 border border-amber-500/10">Indeks Kepuasan</span>
-                    <h3 class="text-lg font-bold text-white mb-2">Survey Indeks Pelayanan (IKM / IPK)</h3>
-                    <p class="text-xs text-gray-300 leading-relaxed mb-4">
-                        Bantu kami meningkatkan kualitas pelayanan dengan mengisi Indeks Kepuasan Masyarakat (IKM) dan Indeks Persepsi Korupsi (IPK) melalui tautan kuesioner resmi eksternal berikut.
-                    </p>
+                <!-- TOMBOL DIBUAT SAMPINGAN & WARNA BAGUS (TIDAK MERAH) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Tombol WhatsApp: Menggunakan aksen hijau WA yang soft atau amber -->
+                    <a href="https://wa.me/085187656263" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 px-4 rounded-lg text-center transition tracking-wide shadow-md shadow-emerald-900/20">
+                        Laporkan Lewat WhatsApp
+                    </a>
+                    <!-- Tombol Web Lapor: Menggunakan aksen biru terang/amber biar matching dengan tema instansi -->
+                    <a href="https://www.lapor.go.id/instansi/kementerian-imigrasi-dan-pemasyarakatan-ri" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold text-xs py-3 px-4 rounded-lg text-center transition tracking-wide shadow-md shadow-amber-500/10">
+                        Laporkan Lewat Web
+                    </a>
                 </div>
-                <a href="https://forms.gle/link-google-form-kamu" target="_blank" class="border border-blue-800 hover:border-blue-700 text-gray-300 font-bold text-xs py-2.5 px-4 rounded-lg text-center transition bg-blue-950/40">
-                    Isi Survey Layanan (Google Form)
-                </a>
             </div>
         </div>
     </main>

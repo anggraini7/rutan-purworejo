@@ -10,36 +10,25 @@
 <body class="bg-bg text-gray-100 font-sans min-h-screen flex flex-col">
 
     <!-- NAVBAR INSTANSI -->
-        @include('partials.navbar')
-
+    @include('partials.navbar')
 
     <!-- KONTEN -->
     <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full space-y-12">
         <div>
-            <h1 class="text-3xl font-bold text-font-biru">Informasi Warga Binaan Pemasyarakatan</h1>
-            <p class="text-sm text-font-abu mt-1">Aspek pembinaan, hak integrasi, serta transparansi tata tertib warga binaan.</p>
+            <h1 class="text-3xl font-bold text-font-biru">Program Pembinaan</h1>
+            <p class="text-sm text-font-abu mt-1">Rutan Kelas IIB Purworejo menyelenggarakan program pembinaan bagi Warga Binaan Pemasyarakatan (WBP), meliputi pembinaan kemandirian, kepribadian, dan penyuluhan hukum.</p>
             <div class="w-12 h-1 bg-amber-500 mt-3 rounded"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-[#0f294a] rounded-xl p-6 border border-blue-900/40 shadow-sm">
-                <h3 class="text-lg font-bold text-amber-400 mb-3">Program Pembinaan WBP</h3>
-                <div class="space-y-3 text-sm text-gray-300">
+        <!-- DIUBAH: MEMBUAT CARD DI TENGAH DAN AGAK LEBAR -->
+        <div class="flex justify-center">
+            <!-- Menggunakan max-w-3xl agar card lebih lebar dan nyaman dibaca di monitor besar -->
+            <div class="bg-[#0f294a] rounded-xl p-6 border border-blue-900/40 shadow-sm w-full max-w-3xl">
+                <h3 class="text-lg font-bold text-amber-400 mb-3 text-center md:text-left">Program Pembinaan WBP</h3>
+                <div class="space-y-4 text-sm text-gray-300">
                     <p><strong>1. Pembinaan Kepribadian:</strong> Berfokus pada aspek spiritual, keagamaan, bela negara, serta penyuluhan kesadaran hukum rutin.</p>
                     <p><strong>2. Pembinaan Kemandirian:</strong> Pelatihan keterampilan kerja produktif (agribisnis, kerajinan tangan) untuk bekal kemandirian ekonomi.</p>
-                </div>
-            </div>
-
-            <div class="bg-[#0f294a] rounded-xl p-6 border border-blue-900/40 shadow-sm">
-                <h3 class="text-lg font-bold text-amber-400 mb-3">Hak & Kewajiban WBP</h3>
-                <div class="space-y-3 text-sm text-gray-300">
-                    <p>Setiap WBP berhak atas program integrasi hukum transparan tanpa dipungut biaya apapun, meliputi:</p>
-                    <ul class="list-disc list-inside space-y-1 text-xs text-gray-400">
-                        <li>Remisi (Pengurangan masa pidana)</li>
-                        <li>Asimilasi (Pembauran dengan masyarakat)</li>
-                        <li>Pembebasan Bersyarat (PB)</li>
-                    </ul>
-                    <p class="text-xs border-t border-blue-900/40 pt-2 italic text-rose-400 font-medium">Wajib mematuhi seluruh peraturan tata tertib kehidupan blok hunian rutan.</p>
+                    <p><strong>3. Penyuluhan Hukum:</strong> Penyuluhan hukum diberikan kepada Warga Binaan Pemasyarakatan (WBP) untuk meningkatkan pemahaman dan kesadaran hukum.</p>
                 </div>
             </div>
         </div>
