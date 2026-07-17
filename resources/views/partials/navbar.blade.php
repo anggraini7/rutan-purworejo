@@ -1,4 +1,4 @@
-<nav class="bg-instansi-dark text-white border-b border-blue-900/40 relative z-50">
+<nav class="bg-instansi-dark text-white sticky top-0 z-50 bg-footer border-b border-blue-900/40 shadow-md">
     <!-- Menggunakan 'w-full' menggantikan 'max-w-7xl' dan menaikkan padding pinggirnya -->
     <div class="w-full px-6 sm:px-12 py-3 flex items-center justify-between">
         

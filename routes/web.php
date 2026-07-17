@@ -11,8 +11,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Beranda (Mengambil data berita untuk ditampilkan di landing page jika perlu)
+// Beranda (Mengambil 3 data berita terbaru untuk ditampilkan di landing page)
 Route::get('/', function () {
-    $posts = \App\Models\Post::latest()->get();
+    $posts = \App\Models\Post::latest()->take(3)->get(); // Ditambahkan ->take(3)
     return view('beranda', compact('posts'));
 });
 
