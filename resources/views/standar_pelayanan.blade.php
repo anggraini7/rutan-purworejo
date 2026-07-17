@@ -10,13 +10,13 @@
 <body class="bg-bg text-gray-100 font-sans min-h-screen flex flex-col">
 
     <!-- NAVBAR INSTANSI -->
-        @include('partials.navbar')
+    @include('partials.navbar')
     <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden flex items-center justify-center">
         <img src="{{ asset('img/rutan2.jpeg') }}" alt="Background Rutan" class="w-full h-full object-cover opacity-10 filter grayscale">
     </div>
 
     <!-- KONTEN -->
-    <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full space-y-12">
+    <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full space-y-8 relative z-10">
         <div>
             <h1 class="text-3xl font-bold text-font-biru">Standar Pelayanan Publik</h1>
             <p class="text-sm text-font-abu mt-1">Komitmen kepastian hukum dan transparansi pelayanan Rutan Kelas IIB Purworejo.</p>
@@ -32,10 +32,24 @@ Apabila Kami Tidak Menepati Janji, Maka Kami Siap Menerima Sanksi Sesuai Ketentu
             </p>
         </div>
 
-        <!-- Prosedur Pengaduan Formal -->
-        <div class="bg-[#0f294a] rounded-xl p-6 sm:p-8 border border-blue-900/40 shadow-sm">
-           
+        <!-- CARD FOTO / DOKUMENTASI STANDAR PELAYANAN -->
+        <div class="bg-gradient-to-br from-[#0f294a] to-[#12335c] text-white rounded-xl p-6 shadow-md max-w-3xl mx-auto border border-blue-900/50">
+            <h3 class="text-sm font-bold text-amber-400 uppercase tracking-widest mb-4 text-center md:text-center">Dokumentasi Banner Maklumat</h3>
+            
+            <!-- Menggunakan pembungkus tunggal agar foto memanjang penuh mengikuti lebar card -->
+            <div class="bg-blue-950/40 rounded-lg p-3 border border-blue-900/30 space-y-3">
+                <!-- 💡 Pastikan nama file gambar disesuaikan dengan yang kamu simpan di folder public, misal: maklumat_pelayanan.jpg -->
+                <img src="{{ asset('img/pelayanan/maklumat_pelayanan.jpg') }}" 
+                     alt="Banner Maklumat Pelayanan Rutan Purworejo" 
+                     class="rounded-md w-full h-auto object-contain border border-blue-900/40 shadow-inner" 
+                     onerror="this.src='https://placehold.co/1000x600/0a1e36/ffffff?text=Banner+Maklumat+Pelayanan'">
+                
+                <p class="text-xs text-center text-gray-300 font-medium tracking-wide">
+                    Infografis Resmi Maklumat Pelayanan Rutan Kelas IIB Purworejo
+                </p>
+            </div>
         </div>
+
     </main>
 
     <footer class="bg-[#08172c] text-gray-500 text-xs py-6 text-center">&copy; {{ date('Y') }} Rutan Kelas IIB Purworejo.</footer>

@@ -48,8 +48,8 @@ Route::get('/standar-pelayanan', function () {
 });
 
 // Halaman Informasi WBP
-Route::get('/informasi-wbp', function () {
-    return view('informasi_wbp');
+Route::get('/program-pembinaan', function () {
+    return view('program_pembinaan'); // Ini harus sama persis dengan nama file blade-mu
 });
 
 // Halaman Layanan Pengaduan

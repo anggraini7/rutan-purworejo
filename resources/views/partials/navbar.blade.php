@@ -5,7 +5,7 @@
         <!-- LOGO & TEKS (Kiri) -->
         <div class="flex items-center space-x-3">
             <img src="{{ asset('img/logo.png') }}" alt="Logo" class="w-10 h-10 object-contain">
-            <img src="{{ asset('img/logo2.png') }}" alt="Logo" class="w-10 h-10 object-contain">
+            <img src="{{ asset('img/logo4.png') }}" alt="Logo" class="w-10 h-10 object-contain">
             <div>
                 <h1 class="font-bold text-xs uppercase tracking-wider leading-tight">Rutan Kelas IIB purworejo</h1>
                 <p class="text-[10px] text-gray-400 leading-none">Kementerian Imigrasi dan Pemasyarakatan</p>
@@ -17,11 +17,11 @@
             <a href="{{ url('/') }}"class="{{ request()->is('beranda*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Beranda</a>
             <a href="{{ url('/profil') }}"class="{{ request()->is('profil*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Profil</a>
             <a href="{{ url('/berita') }}"class="{{ request()->is('berita*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Berita</a>
-            <a href="{{ url('/informasi-wbp') }}"class="{{ request()->is('informasi-wbp') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Program Pembinaan </a>
-            <a href="{{ url('/standar-pelayanan') }}"class="{{ request()->is('standar-pelayanan*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">layanan</a>
             <a href="{{ url('/publikasi') }}"class="{{ request()->is('publikasi*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Publikasi</a>
-            <a href="{{ url('/') }}"class="{{ request()->is('*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Produk Karya WBP</a>
             <a href="{{ url('/inovasi') }}"class="{{ request()->is('inovasi*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Inovasi</a>
+            <a href="{{ url('/program-pembinaan') }}"class="{{ request()->is('program-pembinaan') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Program Pembinaan </a>
+            <a href="{{ url('/standar-pelayanan') }}"class="{{ request()->is('standar-pelayanan*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Pelayanan Publik</a>
+            <a href="{{ url('/') }}"class="{{ request()->is('*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Produk Karya WBP</a>
 
             <!-- DROPDOWN LAYANAN UNTUK LAPTOP -->
             <div class="relative">
@@ -68,11 +68,15 @@
 
     <!-- Menu Link di dalam Sidebar -->
     <div class="flex flex-col space-y-4 px-6 py-4 text-base font-semibold">
-        <a href="{{ url('/') }}"class="{{ request()->is('beranda*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Beranda</a>
-        <a href="{{ url('/profil') }}"class="{{ request()->is('profil*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Profil</a>
-        <a href="{{ url('/berita') }}"class="{{ request()->is('berita*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Berita</a>
-        <a href="{{ url('/informasi-wbp') }}"class="{{ request()->is('informasi-wbp') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Program Pembinaan</a>
-        <a href="{{ url('/standar-pelayanan') }}"class="{{ request()->is('standar-pelayanan*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Standar Pelayanan</a>
+            <a href="{{ url('/') }}"class="{{ request()->is('beranda*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Beranda</a>
+            <a href="{{ url('/profil') }}"class="{{ request()->is('profil*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Profil</a>
+            <a href="{{ url('/berita') }}"class="{{ request()->is('berita*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Berita</a>
+            <a href="{{ url('/publikasi') }}"class="{{ request()->is('publikasi*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Publikasi</a>
+            <a href="{{ url('/inovasi') }}"class="{{ request()->is('inovasi*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Inovasi</a>
+            <a href="{{ url('/program-pembinaan') }}"class="{{ request()->is('program-pembinaan') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Program Pembinaan </a>
+            <a href="{{ url('/standar-pelayanan') }}"class="{{ request()->is('standar-pelayanan*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Pelayanan Publik</a>
+            <a href="{{ url('/') }}"class="{{ request()->is('*') ? 'text-amber-400 font-bold' : 'text-gray-300 hover:text-amber-400' }} transition">Produk Karya WBP</a>
+
         
         <!-- DROPDOWN LAYANAN UNTUK HP -->
         <div class="w-full">
@@ -85,7 +89,7 @@
             <div id="mobile-dropdown-menu" class="mt-2 pl-4 flex flex-col space-y-3 border-l border-gray-700 hidden">
                 <a href="{{ url('/kunjungan') }}" class="text-sm text-gray-400 hover:text-amber-400 transition {{ request()->is('kunjungan*') ? 'text-amber-400 font-bold' : '' }}">Layanan Kunjungan</a>
                 <a href="{{ url('/layanan-pengaduan') }}" class="text-sm text-gray-400 hover:text-amber-400 transition {{ request()->is('layanan-pengaduan*') ? 'text-amber-400 font-bold' : '' }}">Layanan Pengaduan</a>
-                <a href="{{ url('/layanan-Integrasi') }}" class="text-sm text-gray-400 hover:text-amber-400 transition {{ request()->is('layanan-Integrasi*') ? 'text-amber-400 font-bold' : '' }}">Layanan Integrasi</a>
+                <a href="{{ url('/layanan-integrasi') }}" class="text-sm text-gray-400 hover:text-amber-400 transition {{ request()->is('layanan-integrasi*') ? 'text-amber-400 font-bold' : '' }}">Layanan Integrasi</a>
             </div>
         </div>
     </div>

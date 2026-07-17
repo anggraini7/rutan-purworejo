@@ -44,7 +44,7 @@
             <div class="bg-[#0f294a] rounded-xl p-6 border border-blue-900/40 shadow-md flex flex-col justify-between">
                 <div>
                     <span class="bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded inline-block mb-3 border border-emerald-500/20">Hotline Chat</span>
-                    <h3 class="text-lg font-bold text-white mb-2">Wa Takon Rosi</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Takon Rosi</h3>
                     <p class="text-xs text-gray-300 leading-relaxed mb-6">
                         Tanya Konsultasi Proses Integrasi Layanan khusus pemanfaatan teknologi digital melalui aplikasi WhatsApp, untuk memudahkan pelayanan program integrasi kepada keluarga (masyarakat); tanya/konsultasi, pengiriman, dan penerimaan dokumen persyaratan.
                     </p>
