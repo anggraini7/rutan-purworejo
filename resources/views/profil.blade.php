@@ -10,7 +10,9 @@
 <body class="bg-bg text-gray-100 font-sans min-h-screen flex flex-col">
 
         @include('partials.navbar')
-
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden flex items-center justify-center">
+        <img src="{{ asset('img/rutan2.jpeg') }}" alt="Background Rutan" class="w-full h-full object-cover opacity-10 filter grayscale">
+    </div>
 
     <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full space-y-12">
         <div>

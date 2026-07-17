@@ -11,7 +11,9 @@
 
     <!-- NAVBAR INSTANSI -->
         @include('partials.navbar')
-
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden flex items-center justify-center">
+        <img src="{{ asset('img/rutan2.jpeg') }}" alt="Background Rutan" class="w-full h-full object-cover opacity-10 filter grayscale">
+    </div>
 
     <!-- MAIN KONTEN BERITA PURE SATU HALAMAN -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1 w-full">

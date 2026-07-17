@@ -12,7 +12,14 @@
 
     <!-- NAVBAR INSTANSI (Dikunci tetap warna gelap lewat variabel) -->
     @include('partials.navbar')
-
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden flex items-center justify-center">
+        <!-- 
+          💡 Poin Penting:
+          - opacity-10 artinya transparansi fotonya hanya 10% (sangat samar dan elegan). 
+          - Kalau kurang kelihatan bisa dinaikkan ke opacity-15 atau opacity-20.
+        -->
+        <img src="{{ asset('img/rutan2.jpeg') }}" alt="Background Rutan" class="w-full h-full object-cover opacity-10 filter grayscale">
+    </div>
     <!-- HERO SECTION (Berubah jadi background putih, teks biru instansi) -->
     <header class="bg-bg text-hero-text py-28 text-center flex-1 flex flex-col justify-center items-center border-b border-gray-200">
         <div class="max-w-4xl mx-auto px-4">
