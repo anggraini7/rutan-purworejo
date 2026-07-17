@@ -39,9 +39,9 @@ Apabila Kami Tidak Menepati Janji, Maka Kami Siap Menerima Sanksi Sesuai Ketentu
             <!-- Menggunakan pembungkus tunggal agar foto memanjang penuh mengikuti lebar card -->
             <div class="bg-blue-950/40 rounded-lg p-3 border border-blue-900/30 space-y-3">
                 <!-- 💡 Pastikan nama file gambar disesuaikan dengan yang kamu simpan di folder public, misal: maklumat_pelayanan.jpg -->
-                <img src="{{ asset('img/pelayanan/maklumat_pelayanan.jpg') }}" 
+                <img src="{{ asset('img/mak.jpeg') }}" 
                      alt="Banner Maklumat Pelayanan Rutan Purworejo" 
-                     class="rounded-md w-full h-auto object-contain border border-blue-900/40 shadow-inner" 
+                     class="rounded-md w-full h-auto object-contain border border-blue-900/100 shadow-inner" 
                      onerror="this.src='https://placehold.co/1000x600/0a1e36/ffffff?text=Banner+Maklumat+Pelayanan'">
                 
                 <p class="text-xs text-center text-gray-300 font-medium tracking-wide">

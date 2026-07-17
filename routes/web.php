@@ -47,6 +47,11 @@ Route::get('/standar-pelayanan', function () {
     return view('standar_pelayanan');
 });
 
+//halaman karya wbp
+Route::get('/produk-wbp', function (){
+    return view('produk_karya');
+});
+
 // Halaman Informasi WBP
 Route::get('/program-pembinaan', function () {
     return view('program_pembinaan'); // Ini harus sama persis dengan nama file blade-mu
