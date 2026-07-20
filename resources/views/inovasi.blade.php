@@ -17,7 +17,7 @@
     <!-- KONTEN -->
     <main class="max-w-6xl mx-auto px-4 py-12 flex-1 w-full space-y-10">
         <div class="text-center">
-            <h1 class="text-3xl font-bold text-font-biru">Inovasi Layanan</h1>
+            <h1 class="text-3xl font-bold text-font-biru">Inovasi Rutan Purworejo</h1>
             <p class="text-sm text-font-abu mt-1">Daftar terobosan dan inovasi pelayanan publik digital yang diselenggarakan oleh Rutan Kelas IIB Purworejo.</p>
             <div class="w-12 h-1 bg-amber-500 mx-auto mt-3 rounded"></div>
         </div>
@@ -62,6 +62,6 @@
         </div>
     </main>
 
-    <footer class="bg-[#08172c] text-gray-500 text-xs py-6 text-center">&copy; {{ date('Y') }} Rutan Kelas IIB Purworejo.</footer>
+        @include('partials.footer')
 </body>
 </html>

@@ -82,6 +82,6 @@
         </div>
     </main>
 
-    <footer class="bg-[#08172c] text-gray-500 text-xs py-6 text-center">&copy; {{ date('Y') }} Rutan Kelas IIB Purworejo.</footer>
+        @include('partials.footer')
 </body>
 </html>

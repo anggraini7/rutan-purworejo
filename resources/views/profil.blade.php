@@ -16,7 +16,7 @@
     </div>
 
     <!-- KONTEN -->
-    <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full space-y-12">
+    <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full space-y-12 relative z-10">
         <div>
             <h1 class="text-3xl font-bold text-font-biru">Profil Instansi</h1>
             <p class="text-sm text-font-abu mt-1">Sejarah, visi, misi, dan struktur organisasi Rutan Kelas IIB Purworejo.</p>
@@ -25,11 +25,17 @@
 
         <div class="bg-[#0f294a] rounded-xl p-6 sm:p-8 border border-blue-900/40 shadow-sm space-y-6">
             <div>
-                <h3 class="text-lg font-bold text-amber-400 mb-2">Sejarah Singkat</h3>
-                <!-- DIUBAH: Menambahkan class text-justify agar teks rapi kanan-kiri -->
-                <p class="text-sm text-gray-300 leading-relaxed text-justify">
-                    Rumah Tahanan Negara Kelas IIB Purworejo merupakan Unit Pelaksana Teknis di bawah Direktorat Jenderal Pemasyarakatan, Kementerian Imigrasi dan Pemasyarakatan Republik Indonesia. Bangunan ini merupakan peninggalan masa Kolonial Belanda dengan luas tanah 3.418 m² dan luas bangunan 1.732 m². Sejak lahirnya Sistem Pemasyarakatan pada tahun 1964, fasilitas ini bertransformasi menjadi Lembaga Pemasyarakatan Purworejo, kemudian berdasarkan perubahan kebijakan kelembagaan pada tahun 1985 resmi berubah status menjadi Rumah Tahanan Negara Kelas IIB Purworejo dan tetap berlaku hingga saat ini.Dari aspek sarana dan prasarana, Rutan Kelas IIB Purworejo memiliki 4 (empat) blok hunian, yaitu Blok A, B, C, dan D, dengan total 26 (dua puluh enam) kamar hunian berkapasitas 122 orang. Seiring dengan berkembangnya pelaksanaan tugas dan fungsi pemasyarakatan, kondisi hunian saat ini telah mengalami overkapasitas.Lahirnya Undang-Undang Nomor 22 Tahun 2022 tentang Pemasyarakatan membawa transformasi fundamental bagi Rutan Kelas IIB Purworejo dalam menjalankan tanggung jawab strategisnya. Berdasarkan Pasal 4 Undang-Undang tersebut, Rutan tidak lagi hanya menjalankan fungsi pelayanan tahanan selama proses peradilan, tetapi juga menyelenggarakan fungsi pemasyarakatan secara utuh dan terpadu yang meliputi pelayanan, pembinaan, pembimbingan kemasyarakatan, perawatan, pengamanan, dan pengamatan sebagai upaya mewujudkan reintegrasi sosial bagi warga binaan. Perluasan fungsi tersebut turut menjadi salah satu faktor yang menyebabkan kondisi hunian Rutan Kelas IIB Purworejo mengalami overkapasitas.
-                </p>
+                <h3 class="text-lg font-bold text-amber-400 mb-3">Sejarah Singkat</h3>
+                
+                <!-- 💡 PISAH MENJADI 2 PARAGRAF DENGAN space-y-4 -->
+                <div class="space-y-4 text-sm text-gray-300 leading-relaxed text-justify">
+                    <p>
+                        Rumah Tahanan Negara Kelas IIB Purworejo merupakan Unit Pelaksana Teknis di bawah Direktorat Jenderal Pemasyarakatan, Kementerian Imigrasi dan Pemasyarakatan Republik Indonesia. Bangunan ini merupakan peninggalan masa Kolonial Belanda dengan luas tanah 3.418 m² dan luas bangunan 1.732 m². Sejak lahirnya Sistem Pemasyarakatan pada tahun 1964, fasilitas ini bertransformasi menjadi Lembaga Pemasyarakatan Purworejo, kemudian berdasarkan perubahan kebijakan kelembagaan pada tahun 1985 resmi berubah status menjadi Rumah Tahanan Negara Kelas IIB Purworejo dan tetap berlaku hingga saat ini. Dari aspek sarana dan prasarana, Rutan Kelas IIB Purworejo memiliki 4 (empat) blok hunian, yaitu Blok A, B, C, dan D, dengan total 26 (dua puluh enam) kamar hunian berkapasitas 122 orang. Seiring dengan berkembangnya pelaksanaan tugas dan fungsi pemasyarakatan, kondisi hunian saat ini telah mengalami overkapasitas.
+                    </p>
+                    <p>
+                        Lahirnya Undang-Undang Nomor 22 Tahun 2022 tentang Pemasyarakatan membawa transformasi fundamental bagi Rutan Kelas IIB Purworejo dalam menjalankan tanggung jawab strategisnya. Berdasarkan Pasal 4 Undang-Undang tersebut, Rutan tidak lagi hanya menjalankan fungsi pelayanan tahanan selama proses peradilan, tetapi juga menyelenggarakan fungsi pemasyarakatan secara utuh dan terpadu yang meliputi pelayanan, pembinaan, pembimbingan kemasyarakatan, perawatan, pengamanan, dan pengamatan sebagai upaya mewujudkan reintegrasi sosial bagi warga binaan. Perluasan fungsi tersebut turut menjadi salah satu faktor yang menyebabkan kondisi hunian Rutan Kelas IIB Purworejo mengalami overkapasitas.
+                    </p>
+                </div>
             </div>
 
             <div class="border-t border-blue-900/50 pt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -50,25 +56,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- 💡 SECTION BARU: STRUKTUR ORGANISASI (DI ANTARA VISI MISI & PROFIL PENJABAT) -->
-        <section class="space-y-6 pt-4">
-            <div class="text-center">
-                <h2 class="text-2xl font-bold text-font-biru">Struktur Organisasi</h2>
-                <p class="text-xs text-font-abu mt-1">Bagan tata kerja kelembagaan Rutan Kelas IIB Purworejo</p>
-                <div class="w-10 h-0.5 bg-amber-500 mx-auto mt-2 rounded"></div>
-            </div>
-
-            <div class="flex justify-center">
-                <!-- Card Kontainer Foto Struktur Organisasi -->
-                <div class="bg-[#0f294a] rounded-xl p-4 sm:p-6 border border-blue-900/40 shadow-sm w-full max-w-4xl">
-                    <div class="overflow-hidden rounded-lg bg-blue-950/50 border border-blue-900/20 p-2 flex items-center justify-center">
-                        <!-- Nanti kamu tinggal sesuaikan nama file gambar bagan organisasi di asset ini -->
-                        <img src="{{ asset('img/struktur.jpeg') }}" alt="Bagan Struktur Organisasi Rutan Purworejo" class="w-full h-auto object-contain rounded-md" onerror="this.src='https://placehold.co/1200x600/0a1e36/ffffff?text=Bagan+Struktur+Organisasi'">
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- SECTION PROFIL PENJABAT -->
         <section class="space-y-8 pt-4">
@@ -94,7 +81,6 @@
             <div class="hidden md:block w-0.5 h-6 bg-blue-900/60 mx-auto"></div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                
                 <div class="bg-[#0f294a] rounded-xl p-6 border-2 border-amber-500/40 shadow-xl text-center w-72 space-y-4 transform hover:scale-105 transition duration-200">
                     <div class="w-28 h-28 bg-blue-950 rounded-full mx-auto border-2 border-amber-400 flex items-center justify-center overflow-hidden shadow-inner">
                         <img src="{{ asset('img/dwi.jpeg') }}" alt="Foto Kepala Rutan" class="w-full h-full object-cover">
@@ -127,11 +113,29 @@
                         <p class="text-[9px] text-gray-400 mt-0.5">NIP. 199005082009121003</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
+                <!-- 💡 SECTION STRUKTUR ORGANISASI (CARD MEPET KAYA FOTO BERITA) -->
+        <section class="space-y-6 pt-4">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-font-biru">Struktur Organisasi</h2>
+                <p class="text-xs text-font-abu mt-1">Bagan tata kerja kelembagaan Rutan Kelas IIB Purworejo</p>
+                <div class="w-10 h-0.5 bg-amber-500 mx-auto mt-2 rounded"></div>
+            </div>
+
+            <div class="flex justify-center">
+                <!-- Card dibuat p-0 overflow-hidden mirip detail_berita -->
+                <div class="bg-[#0f294a] rounded-xl overflow-hidden border border-blue-900/40 shadow-lg w-full max-w-4xl">
+                    <img src="{{ asset('img/struktur.jpeg') }}" 
+                         alt="Bagan Struktur Organisasi Rutan Purworejo" 
+                         class="w-full h-auto object-cover opacity-95 block" 
+                         onerror="this.src='https://placehold.co/1200x600/0a1e36/ffffff?text=Bagan+Struktur+Organisasi'">
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-footer text-gray-500 text-xs py-6 text-center border-t border-blue-900/40">&copy; {{ date('Y') }} Rutan Kelas IIB Purworejo.</footer>
+        @include('partials.footer')
 </body>
 </html>

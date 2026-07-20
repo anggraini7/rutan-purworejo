@@ -56,8 +56,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-[#08172c] text-gray-500 text-xs py-6 text-center border-t border-blue-900/40">
-        &copy; {{ date('Y') }} Rutan Kelas IIB Purworejo.
-    </footer>
+        @include('partials.footer')
+
 </body>
 </html>

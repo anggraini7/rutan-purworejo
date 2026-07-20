@@ -22,7 +22,28 @@
             <div class="w-12 h-1 bg-amber-500 mx-auto mt-3 rounded"></div>
         </div>
 
-        <!-- 1. CARD DOKUMEN & PERATURAN DI TENGAH -->
+        <!-- 1. CARD BARCODE SURVEY IKM / IPK -->
+        <div class="flex justify-center">
+            <div class="bg-[#0f294a] rounded-xl p-6 border border-blue-900/40 shadow-sm w-full max-w-xl text-center flex flex-col items-center">
+                <span class="bg-amber-500/10 text-amber-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded inline-block mb-3 border border-amber-500/20">E-Survey</span>
+                <h3 class="text-lg font-bold text-white mb-2">Survey IKM / IPK</h3>
+                <p class="text-xs text-gray-300 max-w-md mx-auto mb-4">
+                    Pindai barcode di bawah ini menggunakan ponsel Anda untuk mengisi Survey Indeks Kepuasan Masyarakat & Indeks Persepsi Korupsi atas layanan kami.
+                </p>
+                
+                <!-- Box Barcode Placeholder -->
+                <div class="bg-white p-4 rounded-lg inline-block shadow-md mb-2">
+                    <!-- Kamu tinggal ganti src gambar barcode aslimu di sini nanti -->
+                    <img src="{{ asset('img/qr.jpeg') }}" alt="Barcode Survey IKM IPK" class="w-40 h-40 object-contain mx-auto">
+                </div>
+                <a href="https://star-survei3a.kemenimipas.go.id/ly/gqKZro8I" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 px-4 rounded-lg text-center transition tracking-wide shadow-md shadow-emerald-900/20">
+                    klik di sini
+                </a>
+                <span class="text-[11px] text-gray-400 italic">Atau klik tautan langsung untuk mengisi survey.</span>
+            </div>
+        </div>
+
+        <!-- 2. CARD DOKUMEN & PERATURAN DI TENGAH -->
         <div class="flex justify-center">
             <div class="bg-[#0f294a] rounded-xl p-6 border border-blue-900/40 shadow-sm w-full max-w-3xl space-y-6">
                 
@@ -119,27 +140,9 @@
         </div>
 
         <!-- 2. CARD BARCODE SURVEY IKM / IPK -->
-        <div class="flex justify-center">
-            <div class="bg-[#0f294a] rounded-xl p-6 border border-blue-900/40 shadow-sm w-full max-w-xl text-center flex flex-col items-center">
-                <span class="bg-amber-500/10 text-amber-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded inline-block mb-3 border border-amber-500/20">E-Survey</span>
-                <h3 class="text-lg font-bold text-white mb-2">Survey IKM / IPK</h3>
-                <p class="text-xs text-gray-300 max-w-md mx-auto mb-4">
-                    Pindai barcode di bawah ini menggunakan ponsel Anda untuk mengisi Survey Indeks Kepuasan Masyarakat & Indeks Persepsi Korupsi atas layanan kami.
-                </p>
-                
-                <!-- Box Barcode Placeholder -->
-                <div class="bg-white p-4 rounded-lg inline-block shadow-md mb-2">
-                    <!-- Kamu tinggal ganti src gambar barcode aslimu di sini nanti -->
-                    <img src="{{ asset('img/qr.jpeg') }}" alt="Barcode Survey IKM IPK" class="w-40 h-40 object-contain mx-auto">
-                </div>
-                <a href="https://star-survei3a.kemenimipas.go.id/ly/gqKZro8I" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 px-4 rounded-lg text-center transition tracking-wide shadow-md shadow-emerald-900/20">
-                    klik di sini
-                </a>
-                <span class="text-[11px] text-gray-400 italic">Atau klik tautan langsung untuk mengisi survey.</span>
-            </div>
-        </div>
+
     </main>
 
-    <footer class="bg-[#08172c] text-gray-500 text-xs py-6 text-center">&copy; {{ date('Y') }} Rutan Kelas IIB Purworejo.</footer>
+        @include('partials.footer')
 </body>
 </html>

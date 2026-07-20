@@ -134,7 +134,7 @@
         </div>
     </div>
 
-    <footer class="bg-[#08172c] text-gray-500 text-xs py-6 text-center">&copy; {{ date('Y') }} Rutan Kelas IIB Purworejo.</footer>
+        @include('partials.footer')
 
     <!-- ======================================================= -->
     <!-- SCRIPT PROSES DATA JADI TEXT WHATSAPP -->
@@ -175,5 +175,6 @@
             window.open(urlWA, '_blank');
         }
     </script>
+        
 </body>
 </html>

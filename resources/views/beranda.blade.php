@@ -24,7 +24,8 @@
     </div>
 
         <!-- HERO SECTION (Background Putih) -->
-        <header class="bg-bg text-hero-text py-28 text-center flex flex-col justify-center items-center border-b border-gray-200">
+<!-- HERO SECTION (Background Putih) -->
+        <header class="bg-bg text-hero-text py-28 text-center flex flex-col justify-center items-center">
             <div class="max-w-4xl mx-auto px-4">
                 <span class="bg-instansi-dark text-font-putih text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full inline-block mb-5 border border-font-putih/20">
                     Situs Resmi Instansi
@@ -95,9 +96,7 @@
         </section>
 
         <!-- FOOTER (Kunci Tetap Berada di Paling Bawah Layar) -->
-        <footer class="bg-footer text-gray-500 text-[11px] sm:text-xs py-6 border-t border-gray-800 w-full">
-            <div class="text-center">&copy; {{ date('Y') }} Rumah Tahanan Negara Kelas IIB Purworejo.</div>
-        </footer>
+        @include('partials.footer')
 
     </div>
 
