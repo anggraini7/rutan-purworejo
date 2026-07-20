@@ -19,7 +19,7 @@
             <span class="hidden sm:inline text-blue-900/80">•</span>
 
             <!-- Facebook -->
-            <a href="https://facebook.com" target="_blank" 
+            <a href="https://www.facebook.com/share/1CjKRcnSLZ/?mibextid=wwXIfr" target="_blank" 
                class="hover:text-amber-400 transition duration-200 flex items-center gap-1.5 group">
                 <!-- Logo Facebook SVG -->
                 <svg class="w-4 h-4 fill-current text-gray-400 group-hover:text-amber-400 transition duration-200" viewBox="0 0 24 24">
